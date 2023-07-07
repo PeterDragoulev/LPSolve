@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Body">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button id="solve" fx:id="solve" layoutX="460.0" layoutY="186.0" mnemonicParsing="false" onAction="#solveEvent" text="Get optimal solution" />
+            <TextArea id="outEquations" fx:id="outConstriants" layoutX="14.0" layoutY="186.0" prefHeight="146.0" prefWidth="400.0" />
+            <TextArea id="outObjFunction" fx:id="outObjFunction" layoutX="14.0" layoutY="125.0" prefHeight="39.0" prefWidth="400.0" />
+            <Label layoutX="241.0" layoutY="14.0" text="Linear Program Solver" />
+            <Label layoutX="284.0" layoutY="32.0" text="Form:" />
+            <Label layoutX="261.0" layoutY="50.0" text="max c^Tx + d " />
+            <Label layoutX="261.0" layoutY="68.0" text="s. t." />
+            <Label layoutX="280.0" layoutY="86.0" prefHeight="18.0" prefWidth="37.0" text="Ax = b" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
